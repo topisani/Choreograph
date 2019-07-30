@@ -49,6 +49,7 @@ public:
   Timeline() = default;
   /// VS2013 requires us to define the default move constructor.
   Timeline( Timeline &&rhs );
+  Timeline& operator=(Timeline&&) = default;
   //=================================================
   // Creating Motions. Output<T>* Versions
   //=================================================
